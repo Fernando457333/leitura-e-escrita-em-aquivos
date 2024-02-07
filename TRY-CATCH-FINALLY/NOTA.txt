@@ -1,0 +1,23 @@
+//TRY marca um bloco de declarações onde todo codigo inserido neste bloco sera executado/testado
+
+//CATCH ; caso algum erro aconteça em alguma declaração no bloco try,
+//a execução do codigo é interronpida imediatamente e o erro é capturado pelo catch.
+
+//FINALLY ;o finally é executado sempre depois da execução de todo try ou catch
+
+//exemplo
+try {
+    const arquivo = await fstat.readfile('arquivo.txt');
+    console.log(arquivo);
+} catch (erro) {
+    console.log(erro.mensage);
+}
+
+try {
+    const arquivo = await fstat.readfile('arquivo.txt');
+    console.log(arquivo);
+} catch (erro) {
+    console.log(erro.mensage);
+} finally {
+    console.log('Essa mensagem sempre sera exibida')
+}

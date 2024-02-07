@@ -1,0 +1,1 @@
+teste em leitura e escrita em aquivos JS
